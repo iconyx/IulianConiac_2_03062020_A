@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- in this version adding media query styles -->
+<html lang="fr">
+    <head>
+        <title>Reservia Webpage</title>
+        <!-- linking defined CSS styles for this interface -->
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
+        <link href="css/style4-3.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="OPENCLASSROOMS, HTML, CSS, project, web developer">
+        <meta name="description" content="Project 2">
+        <meta name="author" content="Iulian Coniac">
+        <!-- linking icons imported from Font Awesome library -->
+        <script src="https://kit.fontawesome.com/3473fdcbbc.js" crossorigin="anonymous"></script>
+        <!-- linking Raleway font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+
+<!-- THE HEADER -->
+
+<header>
+    <div class="logo">
+        <img src="images/logo/Reservia.svg" alt="reservia logo">
+    </div>
+    <nav class="main-menu">
+        <ul class="margin">
+            <li class="active"><a href="#accomodations">Accomodations</a></li>
+            <li class=""><a href="#activities">Activities</a></li>   
+        </ul>
+    </nav>
+    <div class="signup">Sign Up</div>
+    
+</header>
+
+<!-- THE MAIN -->
+
+<main>
+    <h1 id="#accomodations">Find a place for your dream vacation</h1>
+    <p>Downtown or in nature</p>
+<!-- Internetingithard.com says to only use <section> as a more descriptive <div> wrapper for the implicitly defined sections of your page. Don’t use it for self-contained content (that’s what <article> is for) or when it’s purely for layout purposes -->
+
+    <!-- SEARCH SECTION -->
+
+    <section class="search-section">
+        <div class="form">
+            <form action="" method="GET" id="form-search">
+                <div class="wrapper">
+                    <i class="fas fa-map-marker-alt location-icon"></i>
+                    <label for="fsearch"></label>
+                    <input type="text" id="fsearch" name="fsearch"/>
+                    <input type="submit" value="Search" id="btn-search">
+                </div>
+            </form>
+        </div>
+            
+        <!-- normal buttons, take icons from FontAwesome -->
+        <div class="filters">
+            <h3>Filters</h3>
+            <button class="filter-button"><i class="fas fa-money-bill-wave-alt button-icon"></i>&nbsp;Low cost</button>
+            <button class="filter-button"><i class="fas fa-users button-icon"></i>&nbsp;Family-friendly</button>
+            <button class="filter-button"><i class="fas fa-heart button-icon"></i>&nbsp;Romantic</button>
+            <button class="filter-button"><i class="fas fa-dog button-icon"></i>&nbsp;Pets allowed</button>
+        </div>
+    </section>
+    <p class="info"><i class="fas fa-info-circle">&nbsp;</i>More than 500 accomodations are available in this city</p>
+
+    <!-- RESULTS SECTION -->
+    
+    <section class="results">
+        <div class="accomodations box-style">
+            <h1>Accomodations in Marseille</h1>
+            <ul class="accomodations-list">
+                <li class="item-box-style">
+                    <picture class="results-picture">
+                        <img 
+                        srcset="
+                            /images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1x,
+                            /images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2x,
+                            /images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3x,
+                            /images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 4x
+                            "
+                        src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="Photo Auberge la Cannebiere">
+    
+     <!--                    <source media="(min-width:600px)" srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <source media="(min-width:800px)" srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <img src="marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge la Cannebiere" style="width:auto"> -->
+                    </picture>
+                    <h2>Auberge la Cannebiere</h2>
+                    <h6>Night starting at <span class="price">25£</span></h6>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </li>
+                <li class="item-box-style">
+                    <picture class="results-picture">
+                        <img 
+                        srcset="
+                            /images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1x,
+                            /images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2x,
+                            /images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3x,
+                            /images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 4x
+                            "
+                        src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="Photo Hotel du Port">
+                    </picture>
+                    <h2>Hotel du port</h2>
+                    <h6>Night starting at <span class="price">52£</span></h6>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </li>
+                <li class="item-box-style">
+                    <picture class="results-picture">
+                        <img
+                        srcset="
+                            /images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 1x,
+                            /images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 2x,
+                            /images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3x,
+                            /images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4x
+                            "
+                        src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="Photo Les mouettes Hotel">
+                    </picture>
+                    <h2>Les mouettes Hotel</h2>
+                    <h6>Night starting at <span class="price">76£</span></h6>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </li>
+                <li class="item-box-style">
+                    <picture class="results-picture">
+                        <img 
+                        srcset="
+                            /images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1x,
+                            /images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2x,
+                            /images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 3x,
+                            /images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4x
+                            "
+                        src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="Photo Hotel de la mer">
+                    </picture>
+                    <h2>Hotel de la mer</h2>
+                    <h6>Night starting at <span class="price">46£</span></h6>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </li>
+                <li class="item-box-style">
+                    <picture class="results-picture">
+                        <img 
+                        srcset="
+                            /images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1x,
+                            /images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2x,
+                            /images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 3x,
+                            /images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 4x
+                            "
+                        src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="Photo Auberge Le Panier">
+                    </picture>
+                    <h2>Auberge Le Panier</h2>
+                    <h6>Night starting at <span class="price">23£</span></h6>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </li>
+                <li class="item-box-style">
+                    <picture class="results-picture center-cropped">
+                        <img 
+                        srcset="
+                            /images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1x,
+                            /images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2x,
+                            /images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3x,
+                            /images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 4x
+                            "
+                        src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="Photo Hotel chez Amina">
+                    </picture>
+                    <h2>Hotel chez Amina</h2>
+                    <h6>Night starting at <span class="price">96£</span></h6>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </li>
+            </ul>
+            <h4>Show more</h4>
+        </div>
+
+
+        <!-- ASIDE / MOST POPULAR -->
+
+        <aside class="box-style">
+            <h1>Most Popular</h1>
+            <ul>
+                <li class="item-box-style">
+                    <div class="popular-description">
+                        <h2>Morning Sun Hotel ff</h2>
+                        <h6>Night starting at <span class="price">128£</span></h6>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <picture class="">
+                        <img
+                            srcset="
+                                /images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1x,
+                                /images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2x,
+                                /images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 3x,
+                                /images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4x
+                                "
+                            src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="Photo Morning Sun Hotel">
+                    </picture>
+                </li>
+                <li class="item-box-style">
+                    <div class="popular-description">
+                        <h2>Au coeur de l'eau Bed and Breakfast</h2>
+                        <h6>Night starting at <span class="price">71£</span></h6>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <picture class="">
+                        <img
+                            srcset="
+                                /images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 1x,
+                                /images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 2x,
+                                /images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 3x,
+                                /images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4x
+                                "
+                            src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            alt="Photo Au coeur de l'eau Bed and Breakfast">
+                    </picture>
+                </li>
+                <li class="item-box-style">
+                    <div class="popular-description">
+                        <h2>Tout bleu et Blanc Hotel</h2>
+                        <h6>Night starting at <span class="price">68£</span></h6>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <picture class="">
+                        <img 
+                            srcset="
+                                /images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1x,
+                                /images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2x,
+                                /images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 3x,
+                                /images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4x
+                                "
+                            src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                            alt="Photo Tout bleu et Blanc Hotel">
+                    </picture>
+                </li>
+            </ul>
+        </aside>
+    </section>
+    
+    <!-- ACTIVITIES SECTION -->
+
+    <section class="activities">
+        <h1 id="activities">Activities in Marseille</h1>
+        <ul>
+            <li class="item-box-style">
+                <h2>Old Port</h2>
+                <picture>
+                    <img 
+                    srcset="
+                        /images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1x,
+                        /images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2x,
+                        /images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3x,
+                        /images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 4x
+                        "
+                    src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+                    alt="Photo Old Port">
+                </picture>
+
+            </li>
+            <li class="item-box-style">
+                <h2>Pomegues Fort</h2>
+                <picture>
+                    <img 
+                    srcset="
+                        /images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1x,
+                        /images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2x,
+                        /images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 3x,
+                        /images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 4x
+                        "
+                    src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
+                    alt="Photo Pomegues Fort">
+                </picture>
+            </li>
+            <li class="item-box-style">
+                <h2>Frioul Island</h2>
+                <picture>
+                    <img 
+                    srcset="
+                        /images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1x,
+                        /images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2x,
+                        /images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 3x,
+                        /images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 4x
+                        "
+                    src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
+                    alt="Photo Frioul Island">
+                </picture>
+            </li>
+            <li class="item-box-style">
+                <h2>Calanques National Park</h2>
+                <picture>
+                    <img 
+                    srcset="
+                        /images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1x,
+                        /images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x,
+                        /images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3x,
+                        /images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 4x
+                        "
+                    src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+                    alt="Photo Calanques National Park">
+                </picture>
+            </li>
+            <li class="item-box-style">
+                <h2>Notre-Dame-de-la-Garde</h2>
+                <picture>
+                    <img 
+                    srcset="
+                        /images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 1x,
+                        /images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 2x,
+                        /images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 3x,
+                        /images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 4x
+                        "
+                    src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
+                    alt="Photo Notre-Dame-de-la-Garde">
+                </picture>
+            </li>
+            <li class="item-box-style">
+                <h2>Longchamp Park</h2>
+                <picture>
+                    <img 
+                    srcset="
+                        /images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1x,
+                        /images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2x,
+                        /images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 3x,
+                        /images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 4x
+                        "
+                    src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
+                    alt="Photo Longchamp Park">
+                </picture>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<!-- FOOTER SECTION -->
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-item">
+            <h2>About</h2>
+        <a href="#">Site Map</a><br>
+        <a href="#">General Terms and Conditions</a><br>
+        <a href="#">Data and Privacy</a>
+        </div>
+    
+        <div class="footer-item">
+            <h2>Our Accommodations</h2>
+        <a href="#">Quality Assessment</a><br>
+        <a href="#">You have a hotel?</a>
+        </div>
+    
+        <div class="footer-item">
+            <h2>Assistance</h2>
+        <a href="#">Help Desk</a><br>
+        <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+</footer>
+
+    </body>
+</html>
