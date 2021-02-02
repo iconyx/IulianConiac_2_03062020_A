@@ -1,5 +1,5 @@
 
-/* in this version adding media query styles */
+/* in this version solving stars position */
 
 
 /* The colors of the chart are blue #0065FC 
@@ -32,12 +32,15 @@ h6 {
     font-size: 0.8rem;
     font-weight: 400;
     margin: 0;
+    margin-bottom: 15px;
 }
 
 .stars {
     margin: 0.5rem 15px;
     font-size: 0.6rem;
     color: #0065FC;
+    /* positions stars at bottom */
+    margin-top: auto;
 }
 
 .price {
@@ -270,6 +273,10 @@ aside li {
     border-radius: 0 15px 15px 0;
     order: 2;
     width: 65%;
+    /* helps aligning stars to flexend */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
