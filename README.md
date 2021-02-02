@@ -1,2 +1,2 @@
-# This repository is for Project 1 of an OPENCLASSROOMS course (Web Developer)
-Reservia v1.0
+# Rservia v1.0 
+This repository is for Project 1 of an OPENCLASSROOMS course (Web Developer)
