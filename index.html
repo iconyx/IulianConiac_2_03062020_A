@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- in this version solving stars position -->
+<!-- in this version solving errors -->
 <html lang="fr">
     <head>
         <title>Reservia Webpage</title>
@@ -41,13 +41,12 @@
 <main>
     <h1 id="#accomodations">Find a place for your dream vacation</h1>
     <p>Downtown or in nature</p>
-<!-- Internetingithard.com says to only use <section> as a more descriptive <div> wrapper for the implicitly defined sections of your page. Don’t use it for self-contained content (that’s what <article> is for) or when it’s purely for layout purposes -->
 
     <!-- SEARCH SECTION -->
 
     <section class="search-section">
         <div class="form">
-            <form action="" method="GET" id="form-search">
+            <form action="submit" method="GET" id="form-search">
                 <div class="wrapper">
                     <i class="fas fa-map-marker-alt location-icon"></i>
                     <label for="fsearch"></label>
@@ -78,17 +77,13 @@
                     <picture class="results-picture">
                         <img 
                         srcset="
-                            /images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1x,
-                            /images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2x,
-                            /images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3x,
-                            /images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 4x
+                            ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1x,
+                            ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2x,
+                            ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3x,
+                            ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 4x
                             "
-                        src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                         alt="Photo Auberge la Cannebiere">
-    
-     <!--                    <source media="(min-width:600px)" srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                        <source media="(min-width:800px)" srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                        <img src="marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge la Cannebiere" style="width:auto"> -->
                     </picture>
                     <h2>Auberge la Cannebiere</h2>
                     <h6>Night starting at <span class="price">25£</span></h6>
@@ -104,12 +99,12 @@
                     <picture class="results-picture">
                         <img 
                         srcset="
-                            /images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1x,
-                            /images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2x,
-                            /images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3x,
-                            /images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 4x
+                            ./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1x,
+                            ./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2x,
+                            ./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3x,
+                            ./images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 4x
                             "
-                        src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                         alt="Photo Hotel du Port">
                     </picture>
                     <h2>Hotel du port</h2>
@@ -126,12 +121,12 @@
                     <picture class="results-picture">
                         <img
                         srcset="
-                            /images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 1x,
-                            /images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 2x,
-                            /images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3x,
-                            /images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4x
+                            ./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 1x,
+                            ./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 2x,
+                            ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3x,
+                            ./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4x
                             "
-                        src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                         alt="Photo Les mouettes Hotel">
                     </picture>
                     <h2>Les mouettes Hotel</h2>
@@ -148,12 +143,12 @@
                     <picture class="results-picture">
                         <img 
                         srcset="
-                            /images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1x,
-                            /images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2x,
-                            /images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 3x,
-                            /images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4x
+                            ./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1x,
+                            ./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2x,
+                            ./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 3x,
+                            ./images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4x
                             "
-                        src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                         alt="Photo Hotel de la mer">
                     </picture>
                     <h2>Hotel de la mer</h2>
@@ -170,12 +165,12 @@
                     <picture class="results-picture">
                         <img 
                         srcset="
-                            /images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1x,
-                            /images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2x,
-                            /images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 3x,
-                            /images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 4x
+                            ./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1x,
+                            ./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2x,
+                            ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 3x,
+                            ./images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 4x
                             "
-                        src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                         alt="Photo Auberge Le Panier">
                     </picture>
                     <h2>Auberge Le Panier</h2>
@@ -192,12 +187,12 @@
                     <picture class="results-picture center-cropped">
                         <img 
                         srcset="
-                            /images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1x,
-                            /images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2x,
-                            /images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3x,
-                            /images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 4x
+                            ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1x,
+                            ./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2x,
+                            ./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3x,
+                            ./images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 4x
                             "
-                        src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                         alt="Photo Hotel chez Amina">
                     </picture>
                     <h2>Hotel chez Amina</h2>
@@ -235,12 +230,12 @@
                     <picture class="">
                         <img
                             srcset="
-                                /images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1x,
-                                /images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2x,
-                                /images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 3x,
-                                /images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4x
+                                ./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1x,
+                                ./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2x,
+                                ./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 3x,
+                                ./images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4x
                                 "
-                            src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                             alt="Photo Morning Sun Hotel">
                     </picture>
                 </li>
@@ -259,12 +254,12 @@
                     <picture class="">
                         <img
                             srcset="
-                                /images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 1x,
-                                /images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 2x,
-                                /images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 3x,
-                                /images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4x
+                                ./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 1x,
+                                ./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 2x,
+                                ./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 3x,
+                                ./images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4x
                                 "
-                            src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                             alt="Photo Au coeur de l'eau Bed and Breakfast">
                     </picture>
                 </li>
@@ -283,12 +278,12 @@
                     <picture class="">
                         <img 
                             srcset="
-                                /images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1x,
-                                /images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2x,
-                                /images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 3x,
-                                /images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4x
+                                ./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1x,
+                                ./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2x,
+                                ./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 3x,
+                                ./images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4x
                                 "
-                            src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                            src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
                             alt="Photo Tout bleu et Blanc Hotel">
                     </picture>
                 </li>
@@ -306,27 +301,26 @@
                 <picture>
                     <img 
                     srcset="
-                        /images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1x,
-                        /images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2x,
-                        /images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3x,
-                        /images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 4x
+                        ./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1x,
+                        ./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2x,
+                        ./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3x,
+                        ./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 4x
                         "
-                    src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+                    src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
                     alt="Photo Old Port">
                 </picture>
-
             </li>
             <li class="item-box-style">
                 <h2>Pomegues Fort</h2>
                 <picture>
                     <img 
                     srcset="
-                        /images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1x,
-                        /images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2x,
-                        /images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 3x,
-                        /images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 4x
+                        ./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1x,
+                        ./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2x,
+                        ./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 3x,
+                        ./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 4x
                         "
-                    src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
+                    src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
                     alt="Photo Pomegues Fort">
                 </picture>
             </li>
@@ -335,12 +329,12 @@
                 <picture>
                     <img 
                     srcset="
-                        /images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1x,
-                        /images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2x,
-                        /images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 3x,
-                        /images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 4x
+                        ./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1x,
+                        ./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2x,
+                        ./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 3x,
+                        ./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 4x
                         "
-                    src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
+                    src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
                     alt="Photo Frioul Island">
                 </picture>
             </li>
@@ -349,12 +343,12 @@
                 <picture>
                     <img 
                     srcset="
-                        /images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1x,
-                        /images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x,
-                        /images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3x,
-                        /images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 4x
+                        ./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1x,
+                        ./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x,
+                        ./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3x,
+                        ./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 4x
                         "
-                    src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+                    src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
                     alt="Photo Calanques National Park">
                 </picture>
             </li>
@@ -363,12 +357,12 @@
                 <picture>
                     <img 
                     srcset="
-                        /images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 1x,
-                        /images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 2x,
-                        /images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 3x,
-                        /images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 4x
+                        ./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 1x,
+                        ./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 2x,
+                        ./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 3x,
+                        ./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 4x
                         "
-                    src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
+                    src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
                     alt="Photo Notre-Dame-de-la-Garde">
                 </picture>
             </li>
@@ -377,12 +371,12 @@
                 <picture>
                     <img 
                     srcset="
-                        /images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1x,
-                        /images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2x,
-                        /images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 3x,
-                        /images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 4x
+                        ./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1x,
+                        ./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2x,
+                        ./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 3x,
+                        ./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 4x
                         "
-                    src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
+                    src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
                     alt="Photo Longchamp Park">
                 </picture>
             </li>
@@ -413,7 +407,6 @@
         <a href="#">Contact Us</a>
         </div>
     </div>
-
 </footer>
 
     </body>

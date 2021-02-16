@@ -1,5 +1,5 @@
 
-/* in this version solving stars position */
+/* in this version solving errors */
 
 
 /* The colors of the chart are blue #0065FC 
@@ -72,7 +72,7 @@ nav {
 nav ul {
     list-style-type: none;
     /* reseting user-agent stylesheet */
-    padding-inline-start: 0;
+    padding-inline-start: unset;
 }
 nav ul li {
     display: inline-block;
