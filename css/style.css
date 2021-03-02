@@ -1,7 +1,4 @@
 
-/* in this version solving errors */
-
-
 /* The colors of the chart are blue #0065FC 
 and its lighter version #DEEBFF, 
 as well as grey for the background #F2F2.
@@ -25,7 +22,6 @@ h1 {
 h2 {
     font-size: 1rem;
     font-weight: 700;
-    /* margin-bottom: 0.3; */
 }
 
 h6 {
@@ -63,7 +59,6 @@ header {
     margin: 10px 0;
 }
 nav {
-    /* border: 1px solid green; */
     flex-basis: 100%;
     /* changing order of flex child */
     order: 3;
@@ -71,8 +66,6 @@ nav {
 
 nav ul {
     list-style-type: none;
-    /* reseting user-agent stylesheet */
-    /* padding-inline-start: unset; */
 }
 nav ul li {
     display: inline-block;
@@ -92,7 +85,6 @@ nav ul li a:hover {
 nav ul li a:active {
     text-decoration: none;
     color: #0065FC;
-    /* border-bottom: 2px solid #0065FC; */
 }
 .active {
     border-bottom: 2px solid #0065FC;
@@ -146,7 +138,6 @@ nav ul li a:active {
     align-items: baseline;
     justify-content: flex-start;
     margin: 5px 5px 5px;
-    /* width: 90%; */
 }
 .filters h3 {
     font-size: 0.8rem;
@@ -194,15 +185,11 @@ margin-bottom: 10px;
     padding: 0px;
 }
 
-.accomodations {
-
-}
 .accomodations h1 {
     width: 100%;
     margin-top: 0;
 }
 .accomodations-list {
-    /* border: 1px solid white; */
     margin: 0;
     
 }
@@ -220,8 +207,6 @@ margin-bottom: 10px;
 }
 
 .results-picture {
-    /* background-color: yellow; */
-    /* border: 5px solid blue; */
     width: auto;
     height: 120px;
 }
@@ -229,7 +214,6 @@ margin-bottom: 10px;
 .accomodations img {
     width: 100%;
     height: inherit;
-    /* border: 5px solid white; */
     border-radius: 15px 15px 0 0;
     /* fitting image inside  */
     object-fit: cover;
@@ -252,7 +236,6 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: space-between; */
     justify-content: flex-start;
     background-color: rgb(240, 240, 240);
 }
@@ -296,14 +279,12 @@ aside img {
     height: 150px;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
-    /* object-position: center; */
 }
 
 /* ACTIVITIES */
 
 section.activities {
     padding: 20px;
-    /* background-color: lightgrey; */
 }
 
 section.activities ul {
@@ -312,10 +293,8 @@ section.activities ul {
 }
 
 .activities li {
-    /* border: 3px solid lightcyan; */
     display: flex;
     flex-flow: column;
-    /* background-color: lightgoldenrodyellow; */
     border: 3px solid white;
     border-radius: 15px;
     justify-content: space-between;
@@ -323,18 +302,15 @@ section.activities ul {
 }
 
 .activities h2 {
-    /* background-color: lightyellow; */
     font-size: 1rem;
     line-height: 1.5;
     padding-left: 10px;
 }
 .activities picture {
-    /* border: 1px solid blue; */
     order: -1;
 }
 
 .activities img {
-    /* border: 1px solid red; */
     border-radius: 10px;
     width: 100%;
     height: 150px;
